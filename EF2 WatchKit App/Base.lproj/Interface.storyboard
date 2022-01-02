@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="EF2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.14999999999999999" alignment="left" id="X6d-j0-19t">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="LVDd" textAlignment="center" id="nxa-Wu-qZu"/>
+                                <label width="0.5" height="1" alignment="left" text="LVDs" textAlignment="center" id="CtH-94-2PJ"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.69999999999999996" alignment="left" id="KlJ-sp-cgD">
+                            <items>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="KBL-8q-sFJ">
+                                    <connections>
+                                        <action selector="LVDdPickerChanged:" destination="AgC-eL-Hgc" id="A9O-v1-7Gb"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="EbE-dd-eh5">
+                                    <connections>
+                                        <action selector="LVDsPickerChanged:" destination="AgC-eL-Hgc" id="dgB-T9-fBn"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <label width="1" height="0.14999999999999999" alignment="left" text="EF: 65%" textAlignment="center" id="8Ww-po-yHf">
+                            <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="EFLabel" destination="8Ww-po-yHf" id="D7b-l5-daA"/>
+                        <outlet property="LVDdPicker" destination="KBL-8q-sFJ" id="u1h-Eq-Yzw"/>
+                        <outlet property="LVDsPicker" destination="EbE-dd-eh5" id="0xL-zC-5lC"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
